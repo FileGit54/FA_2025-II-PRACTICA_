@@ -1,4 +1,4 @@
-def ejerc1():
+def ejer1():
     edad = int(input("Ingrese su edad: "))
 
     if edad>=18:
@@ -13,7 +13,7 @@ def ejerc1():
         print ("NO PUEDE VOTAR ")
         print ("NO PUEDE EJERCER UN CARGO POLITICO")
 
-def ejerc2():
+def ejer2():
     lado1 = int(input("Ingrese lado1: "))
     lado2 = int(input("Ingrese lado2: "))
     lado3 = int(input("Ingrese lado3: "))
@@ -25,6 +25,37 @@ def ejerc2():
     else:
         print ("ESCALENO")
  
+def ejer3():
+    n=int(input("Ingrese un numero: "))
+    suma = 0
 
-ejerc2()
+    print()
 
+    for i in range(1,n+1):
+        print(i)
+
+        if i % 2 ==0:
+            suma += i
+
+    print("\nSuma de pares: ", suma)
+
+def ejer4():
+    cant = int(input("Ingrese la cantidad de numeros: "))
+    ceros = pares = impares = 0
+    print()
+    for i in range(1, cant+1):
+        num = int(input(f"Ingrese el numero {i}: "))
+
+
+        if num ==0:
+            ceros +=1 # ceros++
+        elif num % 2==0:
+            pares +=1 #pares++
+        else:
+            impares +=1 # impares++
+
+    print("\n#ceros: ", ceros)
+    print("#pares: ", pares)
+    print("#impares: ", impares)
+
+ejer4()
